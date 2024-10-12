@@ -1,0 +1,20 @@
+<%- include("partials/header.ejs") %>
+
+
+  <h1>Home Page Blogs</h1>
+  <ul>
+    <% blogs.forEach(blog => { %>
+      <li class="blog" style="display: inline-block;margin-right: 5%;height: 2rem;">
+        <h2><%= blog.title %></h2>
+        <p><%= blog.body %></p>
+        <% console.log("NJ ID = " + blog.id) %>
+        <form action="/delete/<%= blog.id %>" method="POST">
+          <button type="submit">Delete</button>
+        </form>
+      </li>
+    <% }) %>
+  </ul>
+  <a href="/contact">Add a new blog</a>
+  
+
+  <%- include("partials/footer.ejs") %>

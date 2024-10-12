@@ -1,0 +1,9 @@
+1. Make Sure you have Node Js and related Things got installed
+2. Clone This Repo
+3. npm install
+	This will Install all the dependencies. node_modules folder will be created which has all the dependencies for this Project ot run
+4. Install nodemon as we can run this in debug mode
+5. Then run
+	nodemon index.js
+6. If you don't want to use nodemon, then use node as below
+	node index.js

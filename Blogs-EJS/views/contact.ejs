@@ -1,0 +1,17 @@
+<%- include("partials/header.ejs") %>
+<!-- <h1>Contact Me</h1>
+<form>
+  <input name="name" type="text" class="feedback-input" placeholder="Name" />
+  <input name="email" type="text" class="feedback-input" placeholder="Email" />
+  <textarea name="text" class="feedback-input" placeholder="Comment"></textarea>
+  <input type="submit" value="SUBMIT" />
+</form> -->
+<h1>Add New Blogs</h1>
+<form action="/addblog" method="post">
+  <label for="title" >Title</label>
+  <input type="text" name="title" id="title">
+  <label for="blog">Blog</label>
+  <input type="text" name="blog" id="blog" >
+  <input type="submit" value="AddBlog">
+</form>
+  <%- include("partials/footer.ejs") %>
